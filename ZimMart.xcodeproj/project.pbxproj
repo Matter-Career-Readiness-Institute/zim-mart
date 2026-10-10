@@ -6,8 +6,13 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000210 /* ZimMart target proxy */ = {isa = PBXContainerItemProxy; containerPortal = 000000000000000000000000 /* Project object */; proxyType = 1; remoteGlobalIDString = 000000000000000100000000; remoteInfo = ZimMart; };
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		000000000000000000000120 /* ZimMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZimMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000120 /* ZimMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ZimMart.app; path = ZimCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000151 /* ZimCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZimCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +21,20 @@
 			path = ZimMart;
 			sourceTree = "<group>";
 		};
+		000000000000000000000160 /* ZimCartTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ZimCartTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		000000000000000130000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		000000000000000170000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -32,6 +47,7 @@
 			children = (
 				000000000000000000000010 /* ZimMart */,
 				000000000000000000000020 /* Products */,
+				DA6E84CD307AD1F800EE676F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,8 +55,17 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000120 /* ZimMart.app */,
+				000000000000000000000151 /* ZimCartTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DA6E84CD307AD1F800EE676F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000160 /* ZimCartTests */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -64,7 +89,30 @@
 			productReference = 000000000000000000000120 /* ZimMart.app */;
 			productType = "com.apple.product-type.application";
 		};
+		000000000000000200000000 /* ZimCartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000230000000 /* Build configuration list for PBXNativeTarget "ZimCartTests" */;
+			buildPhases = (
+				000000000000000180000000 /* Sources */,
+				000000000000000170000000 /* Frameworks */,
+				000000000000000190000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (000000000000000220000000 /* ZimMart dependency */,);
+			fileSystemSynchronizedGroups = (
+				000000000000000000000160 /* ZimCartTests */,
+			);
+			name = ZimCartTests;
+			productName = ZimCartTests;
+			productReference = 000000000000000000000151 /* ZimCartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000220000000 /* ZimMart dependency */ = {isa = PBXTargetDependency; target = 000000000000000100000000 /* ZimMart */; targetProxy = 000000000000000000000210 /* ZimMart target proxy */; };
+/* End PBXTargetDependency section */
 
 /* Begin PBXProject section */
 		000000000000000000000000 /* Project object */ = {
@@ -94,6 +142,7 @@
 			projectRoot = "";
 			targets = (
 				000000000000000100000000 /* ZimMart */,
+				000000000000000200000000 /* ZimCartTests */,
 			);
 		};
 /* End PBXProject section */
@@ -104,10 +153,20 @@
 			files = (
 			);
 		};
+		000000000000000190000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		000000000000000120000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		000000000000000180000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
 			);
@@ -169,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.6.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -233,7 +292,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.6.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -256,6 +315,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ZimCart;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -269,8 +329,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = zw.co.mcri.zimcart;
+				PRODUCT_NAME = ZimCart;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -293,6 +353,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ZimCart;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -306,8 +367,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = zw.co.mcri.zimcart;
+				PRODUCT_NAME = ZimCart;
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -318,6 +379,40 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		000000000000000231000000 /* Debug configuration for PBXNativeTarget "ZimCartTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zw.co.mcri.zimcart.tests;
+				PRODUCT_NAME = ZimCartTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZimCart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZimCart";
+				TEST_TARGET_NAME = ZimMart;
+			};
+			name = Debug;
+		};
+		000000000000000232000000 /* Release configuration for PBXNativeTarget "ZimCartTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zw.co.mcri.zimcart.tests;
+				PRODUCT_NAME = ZimCartTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZimCart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZimCart";
+				TEST_TARGET_NAME = ZimMart;
 			};
 			name = Release;
 		};
@@ -337,6 +432,14 @@
 			buildConfigurations = (
 				000000000000000111000000 /* Debug configuration for PBXNativeTarget "ZimMart" */,
 				000000000000000112000000 /* Release configuration for PBXNativeTarget "ZimMart" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		000000000000000230000000 /* Build configuration list for PBXNativeTarget "ZimCartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000231000000 /* Debug configuration for PBXNativeTarget "ZimCartTests" */,
+				000000000000000232000000 /* Release configuration for PBXNativeTarget "ZimCartTests" */,
 			);
 			defaultConfigurationName = Release;
 		};
