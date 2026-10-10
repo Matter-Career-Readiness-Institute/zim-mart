@@ -1,0 +1,7 @@
+# Facilitator-only materials. Never add these to student branches.
+/FACILITATOR_ONLY/
+
+# Xcode and Swift build output
+DerivedData/
+*.xcuserstate
+xcuserdata/
